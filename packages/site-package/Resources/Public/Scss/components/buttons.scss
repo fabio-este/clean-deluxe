@@ -1,0 +1,71 @@
+a.btn.btn-primary,
+a.btn.btn-default,
+.frame-type-felogin_login input[type="submit"],
+.cc-btn,
+nav.form-navigation .btn-primary {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0.25rem 2rem;
+  border-radius: 5px;
+  line-height: 2.5rem;
+  color: #fff;
+  width: 100%;
+
+  width: auto;
+  outline: none;
+  border: none;
+  background: transparent;
+  background: linear-gradient(0deg, #000, #272727);
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+ 
+    background-size: 400%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    animation: steam 40s linear infinite;
+    border-radius: 5px;
+  }
+
+  &:after {
+    animation: steam 20s linear infinite;
+    filter: blur(10px);
+  }
+
+  span.btn-text {
+    position: relative;
+    text-transform: uppercase;
+  }
+  @include transition(all 150ms ease-in-out);
+
+  &:hover {
+    @include transition(all 150ms ease-in-out);
+    color: #fff;
+    &:before {
+      filter: blur(20px);
+      opacity: 1;
+      animation: animate-background 8s linear infinite;
+      //animate: 0.5s;
+      transition: 0.5s;
+      color: #fff;
+    }
+  }
+
+  &:focus,
+  &:active {
+    background: linear-gradient(0deg, #272727, #000);
+    color: #fff;
+    @include transition(all 150ms ease-in-out);
+    &:before,
+    &:after {
+      filter: blur(0);
+      color: #fff;
+      animation: animate-background 999s linear infinite;
+      background-size: 100%;
+    }
+  }
+}

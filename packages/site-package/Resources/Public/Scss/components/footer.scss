@@ -1,0 +1,24 @@
+.footer-section-content {
+  background: #000000;
+  --frame-color: #ffffff;
+  --frame-background: #313131;
+  --frame-link-color: #549fe9;
+  --frame-link-hover-color: #1560b6;
+}
+
+.footer-info-section {
+  background: #000000;
+  --frame-color: #ffffff;
+  --frame-background: #313131;
+  --frame-link-color: #549fe9;
+  --frame-link-hover-color: #1560b6;
+  ul#meta_menu {
+    list-style-type: none;
+    text-align: right;
+  }
+
+  .copyright {
+     text-align: center;
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,14 @@
+.gallery-row {
+  --gallery-gap: 1.5rem;
+  .gallery-item {
+    figure .caption {
+      padding-top: 1rem;
+    }
+    a {
+      position: relative;
+      border-radius: 13px;
+
+
+     }
+  }
+}

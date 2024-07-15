@@ -1,0 +1,32 @@
+.navbar{
+    background: #000 !important;
+}
+
+@media (min-width: 1400px) {
+    .navbar-mainnavigation {
+        --mainnavigation-nav-height: 150px;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar-mainnavigation {
+        --mainnavigation-nav-height: 125px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-mainnavigation {
+        --mainnavigation-nav-height: 110px;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-mainnavigation {
+        --mainnavigation-nav-height: 100px;
+    }
+}
+@media (min-width: 576px) {
+    .navbar-mainnavigation {
+        --mainnavigation-nav-height: 100px;
+    }
+}
+.navbar-mainnavigation {
+    --mainnavigation-nav-height: 100px;
+}

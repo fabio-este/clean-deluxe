@@ -1,0 +1,35 @@
+nav.form-navigation {
+  display: flex;
+  justify-content: end;
+}
+
+.form-control,
+.form-group input[type="file"],
+.frame-type-felogin_login input[type="text"],
+.frame-type-felogin_login input[type="password"] {
+  &:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    outline: 0;
+    padding: 1rem;
+  }
+}
+
+label.form-label {
+
+}
+
+.form-text {
+  color: #e0e0e0;
+}
+
+.form-control::placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0.25em;
+  margin-right: 0.25rem;
+}
