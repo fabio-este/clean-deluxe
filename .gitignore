@@ -13,3 +13,5 @@ nbproject
 /var/*
 /packages/site-package/node_modules
 /packages/site-package/node_modules/*
+/.ddev/
+/.ddev/*
