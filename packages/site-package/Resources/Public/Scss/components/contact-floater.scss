@@ -16,10 +16,18 @@
     transform: translate(-50%, 0);
   }
 }
-
-.frame-type-social_links .frame-inner {
-  .list-group {
-    max-width: 53px;
-    margin-left: auto;
+@include media-breakpoint-up(md) {
+  .frame-type-social_links .frame-inner {
+    .list-group {
+      max-width: 53px;
+      margin-left: auto;
+    }
+  }
+}
+.frame-type-social_links {
+  .list-group.list-group-horizontal {
+    .list-group-item {
+      text-align: center;
+    }
   }
 }
