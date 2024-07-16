@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4dc272d8e52aa92ae4dc2403a352e78",
+    "content-hash": "e148246a48d0be90d2f4aae305f0ad8f",
     "packages": [
         {
             "name": "b13/container",
@@ -1022,7 +1022,7 @@
         },
         {
             "name": "fabio-este/site-package",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/site-package",
@@ -7754,17 +7754,133 @@
             "time": "2024-04-17T20:55:49+00:00"
         },
         {
+            "name": "deployer/recipes",
+            "version": "6.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deployphp/recipes.git",
+                "reference": "4c2470771249fbff55eb56429c29d74590768fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deployphp/recipes/zipball/4c2470771249fbff55eb56429c29d74590768fa0",
+                "reference": "4c2470771249fbff55eb56429c29d74590768fa0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "deployer/deployer": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Medvedev",
+                    "email": "anton@medv.io"
+                }
+            ],
+            "description": "3rd party deployer recipes",
+            "homepage": "https://github.com/deployphp/recipes",
+            "keywords": [
+                "cachetool",
+                "cloudflare",
+                "deploy",
+                "deployer",
+                "deployment",
+                "hipchat",
+                "newrelic",
+                "rabbit",
+                "recipes",
+                "sentry",
+                "slack",
+                "yarn"
+            ],
+            "support": {
+                "issues": "https://github.com/deployphp/recipes/issues",
+                "source": "https://github.com/deployphp/recipes"
+            },
+            "abandoned": true,
+            "time": "2019-01-17T06:03:27+00:00"
+        },
+        {
+            "name": "jigal/t3adminer",
+            "version": "12.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:jigal/t3adminer.git",
+                "reference": "8e76d49a483117ecdb22fa21d4dcf0fef0911b4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/jigal%2Ft3adminer/repository/archive.zip?sha=8e76d49a483117ecdb22fa21d4dcf0fef0911b4c",
+                "reference": "8e76d49a483117ecdb22fa21d4dcf0fef0911b4c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-phar": "*",
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0",
+                "typo3/cms-core": "^11.5.0 || ^12.4.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "t3adminer"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jigal\\T3adminer\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jigal van Hemert",
+                    "email": "jigal.van.hemert@typo3.org",
+                    "homepage": "http://www.typo3coder.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adminer as BE module to work with the database",
+            "homepage": "https://forge.typo3.org/projects/extension-t3adminer",
+            "keywords": [
+                "adminer",
+                "database",
+                "dev",
+                "mariadb",
+                "mysql",
+                "phpmyadmin",
+                "postgresq",
+                "sqlite",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://forge.typo3.org/projects/extension-t3adminer/issues"
+            },
+            "time": "2023-09-03T20:40:40+00:00"
+        },
+        {
             "name": "roave/security-advisories",
             "version": "dev-latest",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "c31e886d98723c528ab99e920e7903ccb7391bd0"
+                "reference": "d44cb505c9515db5ff905ec510d69a0f80b366a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c31e886d98723c528ab99e920e7903ccb7391bd0",
-                "reference": "c31e886d98723c528ab99e920e7903ccb7391bd0",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d44cb505c9515db5ff905ec510d69a0f80b366a2",
+                "reference": "d44cb505c9515db5ff905ec510d69a0f80b366a2",
                 "shasum": ""
             },
             "conflict": {
@@ -8402,7 +8518,7 @@
                 "topthink/framework": "<6.0.17|>=6.1,<6.1.5|>=8,<8.0.4",
                 "topthink/think": "<=6.1.1",
                 "topthink/thinkphp": "<=3.2.3",
-                "torrentpier/torrentpier": "<=2.4.1",
+                "torrentpier/torrentpier": "<=2.4.3",
                 "tpwd/ke_search": "<4.0.3|>=4.1,<4.6.6|>=5,<5.0.2",
                 "tribalsystems/zenario": "<9.5.60602",
                 "truckersmp/phpwhois": "<=4.3.1",
@@ -8444,7 +8560,8 @@
                 "wallabag/tcpdf": "<6.2.22",
                 "wallabag/wallabag": "<2.6.7",
                 "wanglelecc/laracms": "<=1.0.3",
-                "web-auth/webauthn-framework": ">=3.3,<3.3.4",
+                "web-auth/webauthn-framework": ">=3.3,<3.3.4|>=4.5,<4.9",
+                "web-auth/webauthn-lib": ">=4.5,<4.9",
                 "web-feet/coastercms": "==5.5",
                 "webbuilders-group/silverstripe-kapost-bridge": "<0.4",
                 "webcoast/deferred-image-processing": "<1.0.2",
@@ -8560,7 +8677,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-11T20:05:10+00:00"
+            "time": "2024-07-15T18:05:53+00:00"
         },
         {
             "name": "symfony/polyfill-php80",

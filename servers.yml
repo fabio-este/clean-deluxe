@@ -1,0 +1,21 @@
+hosts:
+  .server_clean-deluxe: &base_strato
+    hostname: ssh.strato.de
+    user: 53892300.swh.strato-hosting.eu
+    remote_user: 53892300.swh.strato-hosting.eu
+    http_user: 53892300.swh.strato-hosting.eu
+    port: 22
+    pty: true
+    forward_agent: true
+    bin:
+      php: /opt/RZphp82/bin/php-cli
+      composer: "{{bin/php}} ~/bin/composer/composer.phar"
+
+  clean-deluxe.net:
+    <<: *base_strato
+    remote_user: 53892300.swh.strato-hosting.eu
+    branch: master
+    forward_agent: true
+    labels: production
+    deploy_path: "~/clean-deluxe.net"
+    hostname: "ssh.strato.de"
